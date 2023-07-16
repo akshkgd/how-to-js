@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" class="search-field" id="movieName" placeholder="Search details of any movie">
+            <button class="search-btn" onclick="searchMovie()">Search</button>
+        </div>
+    </div>
+
+
+    <div class="movie-container">
+        <div class="details">
+            <h2 id="title"></h2> 
+            <p>Released On <span id="date" class="value"></span></p>
+            <p>Actors: <span id="actors" class="value"></span></p>
+            <p>Box Office collection <span id="collection" class="value">1</span></p>
+            <p>Director: <span class="value" id="director"></span></p>
+            <p>Genre: <span class="value" id="genre"></span></p>
+            <p>Desc: <span class="value" id="desc"></span></p>
+            <p><span class="ratings" id="ratings"></span></p>
+        </div>
+        <div class="">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg" class="poster" id="poster" alt="">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
