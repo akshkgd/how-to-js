@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search">
+        <input type="text" id="movieQuery" class="search-input" placeholder="Search any movie...">
+        <button class="btn" onclick="searchMovie()">Search Movie</button>
+    </div>
+
+    <div class="container">
+        <div>
+            <div class="flex">
+                <h1 id="title" class="title">Avengers </h1>
+                <p id="year">2010</p>
+            </div>
+            <p class="fw-bold">Genre: <span class="fw-normal" id="genre"></span></p>
+
+            <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil maxime repellendus amet dolore molestias aliquid!</p>
+            <p class="fw-bold" >Actors: <span class="fw-normal" id="actors"></span></p>
+            <p class="fw-bold">Directors: <span class="fw-normal" id="directors"></span></p>
+            <p class="fw-bold">Box Office Collection: <span class="fw-normal" id="collection"></span></p>
+            <p class="fw-bold">Writer: <span class="fw-normal" id="writer"></span></p>
+            <p class="fw-bold">Date: <span class="fw-normal" id="date"></span></p>
+            <p class="fw-bold">Awards: <span class="fw-normal" id="awards"></span></p>
+            <p class="fw-bold">IMDB Ratings: <span class="fw-normal" id="ratings"></span></p>
+        </div>
+        <img id="poster" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
