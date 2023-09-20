@@ -1,101 +1,94 @@
-// variables
-// data types
-// arrays
-// objects
-
-// console.log('app.js is connected!!')
-
-
-
-// variables 
-// let salt = 'tata salt'
-// let email = 'ashish@gmail.com'
-// console.log(email)
-
-
 // keywords
-// hello, coffee, calender, hfisfbsjfsd
-// let, for, function, uncle??
-
-
-// es5 => var
-// es6 => let and const
-
+// var
 // data types
-// string => any value inside single / double quotes
-let name = "ashish";
-// numbers => all numbers without quotes
-let age = '25.5';
-// boolean 
-let isUserOnline = true;
+// arrays []
 // objects
+// array of objects
+// refrewnce and primitive
+
+
+// keyword
+// var, for map
+
+// variables
+// var, let and const
+
+
+
+
+
+
+
+// data types => string("", ''), number, boolean, arrays, objects
+let email = "ashish@gmail.com";
+let age = 24.5;
+let isOnline = true;
+
+
+// arrays
+let items = ['milk', 'bread', 'butter']
+// items[0] = 'coffee'
+
+// push adds an element to the end
+// pop removes the last value
+// items.push('apple')
+// items.pop()
+// items.pop()
+
+// splice(index, deleteCount, items(optional))
+// console.log(items)
+items.splice(1, 1, 'apple', 'coffee')
+
+// console.log(typeof items)
+
+
+// console.log(typeof isOnline)
+
+
+
+// objects {}
+// let user = ['ashish', 'ashish@gmail.com', 45000, 26, 'allahabad']
 let user = {
-    name: 'ashish', 
-    email: 'aks@gmail.com',
-    salary: 56000, 
-    age: 25,
-    address: 'delhi',
-    mobile: 9876543210
+    name: 'ashish',
+    email: 'ashish@gmail.com',
+    salary: 45000,
+    age: 26
 }
+user.address = 'allahabad'
 user.name = 'ashish shukla'
-user.hobby = 'teaching'
 delete user.salary
 
-// console.log(user);
+// console.log(user.name)
+// console.log( user.email)
 
 
-
-// array
-let list = ['milk', 'bread', 'butter']
-// index number => add, update, read, delete
-// list[1] = 'brown bread';
-// list[6] = 'apple'
-// push and pop
-// list.push('apple');
-// list.push('coffee');
-// list.pop()
-// list.pop()
-// console.log(list);
-// splice(index, delete count, )
-// list.splice(0, 0, 'apple', 'coffee', 'rice')
-// console.log(list)
+// console.log(typeof user)
 
 
+// why arays are objects is js??
+// index always starts from 0
+// index will always be a number
 
 
+let students = ['arun', 'raj', 'hanumesh']
+students['demo'] = 'result!!'
 
-// array index will always start from 0
-// array index can never be negative
-// array index can never be string
-
-// let arr = ['yash', 'kunal', 'arpit']
-// arr['teacher'] = 'ashish'
-// console.log(arr)
-
-// let demo = {
-//     0: 'yash',
-//     1: 'ashish',
-// }
-// console.log(demo)
+// console.log(Array.isArray(user))
 
 
-// primitive data type
-// reference data type => anything which is not
-// reference is primitive => [] {}
+// primitive and reference
+// reference = [array], {object}
+// primitive => anything apart from reference
+
+// let num1 = 100;
+// let num2 = num1;
+// num2 = num2 +10;
 
 
-// let a = [1,2,3]
-// let b = a;
-
-// console.log(b)
-// b.pop()
-
-// console.log(a)
+// console.log(num1, num2)
 
 
-
-// primitive
-let a = 5;
+let a = [1,2,3]
 let b = a;
-b = 10;
-console.log(b, a)
+b.pop()
+console.log(a,b)
