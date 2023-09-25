@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    background-color: rgb(14, 14, 14);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search{
+    width: 760px;
+    margin: 50px auto;
+    display: flex;
+}
+input{
+    transition: .3s;
+    color: white;
+    width: 75%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid rgb(42, 42, 42);
+    background-color: rgba(96, 96, 96, 0.342);
+}
+input:focus{
+    outline: none;
+    border: 2px solid rgb(87, 87, 87);
+    
+}
+.btn{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    width: 25%;
+}
+#title{
+    margin-top: 0;
+}
+.details{
+    margin: 30px auto;
+    width: 760px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.848);
+}
+.poster{
+    height: 420px;
+}
