@@ -1,94 +1,81 @@
 // keywords
-// var
-// data types
-// arrays []
-// objects
-// array of objects
-// refrewnce and primitive
+// var and data types
+// arrays and objects
+// primitive and reference
 
 
-// keyword
-// var, for map
+// keyword => 
+// variable ?? 
 
-// variables
-// var, let and const
-
-
+// strings, numbers, boolean, array and object/
+// string => char or combination of char inside "" ''
 
 
+// let email = "f";
+// let age = -24.6;
+// let isActive = false
 
-
-
-// data types => string("", ''), number, boolean, arrays, objects
-let email = "ashish@gmail.com";
-let age = 24.5;
-let isOnline = true;
-
-
-// arrays
-let items = ['milk', 'bread', 'butter']
-// items[0] = 'coffee'
-
-// push adds an element to the end
-// pop removes the last value
+// array
+let items = ['milk', 'bread', 'butter'];
+// items[0] = 'apple';
+// items[3] = 'coffee';
+// items.push('grapes')
 // items.push('apple')
-// items.pop()
-// items.pop()
+// items.pop();
 
-// splice(index, deleteCount, items(optional))
+// splice(idex, deleteCount, addItem(optional))
+items.splice(1, 2, 'apple', 'coffee')
+
+
 // console.log(items)
-items.splice(1, 1, 'apple', 'coffee')
-
-// console.log(typeof items)
 
 
-// console.log(typeof isOnline)
+// console.log(typeof isActive);
 
 
 
-// objects {}
-// let user = ['ashish', 'ashish@gmail.com', 45000, 26, 'allahabad']
-let user = {
-    name: 'ashish',
-    email: 'ashish@gmail.com',
-    salary: 45000,
-    age: 26
-}
-user.address = 'allahabad'
-user.name = 'ashish shukla'
-delete user.salary
-
-// console.log(user.name)
-// console.log( user.email)
-
-
+// objects
+// let user = {
+//     name: 'ashish',
+//     email: 'ashish@gmail.com',
+//     age: 25
+// }
+// user.name = 'ashish shukla'
+// user.address = 'Pune'
+// delete user.age
 // console.log(typeof user)
 
 
-// why arays are objects is js??
-// index always starts from 0
-// index will always be a number
+// why arrays are objects
+// primitive and reference 
 
 
-let students = ['arun', 'raj', 'hanumesh']
-students['demo'] = 'result!!'
 
-// console.log(Array.isArray(user))
+// let arr = [1,2,3,4, 'test', true] 
+
+
+// index always starts fro  0
+// index number is always a number 
+// arr['magic'] = 'test'
+// console.log(arr)
+
 
 
 // primitive and reference
-// reference = [array], {object}
-// primitive => anything apart from reference
 
-// let num1 = 100;
-// let num2 = num1;
-// num2 = num2 +10;
-
-
-// console.log(num1, num2)
-
+// primitive : 
+// reference: [],{}
 
 let a = [1,2,3]
 let b = a;
+
 b.pop()
-console.log(a,b)
+console.log(a)
+
+
+
+// primitive
+// let a = 5;
+// let b = a;
+// b = 10;
+// console.log(a, b)
