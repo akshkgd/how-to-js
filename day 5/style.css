@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(21, 21, 21);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search{
+    width: 700px;
+    margin: 20px auto;
+    display: flex;
+}
+input{
+    background-color: rgba(96, 96, 96, 0.478);
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid transparent;
+    width: 70%;
+
+}
+input:focus{
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+}
+.btn{
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+   padding: 14px 30px;
+   cursor: pointer;
+}
+.container{
+    color: rgba(255, 255, 255, 0.884);
+    width: 700px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#title{
+    margin-top: 0;
+}
