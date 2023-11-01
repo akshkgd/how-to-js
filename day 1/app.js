@@ -1,81 +1,97 @@
-// keywords
-// var and data types
+// console.log('app.js is connected')
+
+
+// varaibles
+// data types
 // arrays and objects
 // primitive and reference
 
 
-// keyword => 
-// variable ?? 
+// variables
+// father, apple, garden, yitoyo, fi ufoisu
+// keyword => something that compiler can understand
 
-// strings, numbers, boolean, array and object/
-// string => char or combination of char inside "" ''
+// var(es5 => depreciated), let and const => es6 
 
+// let email = 'ashish@gmail.com';
+// email = 'yash@gmail.com';
 
-// let email = "f";
-// let age = -24.6;
-// let isActive = false
-
-// array
-let items = ['milk', 'bread', 'butter'];
-// items[0] = 'apple';
-// items[3] = 'coffee';
-// items.push('grapes')
-// items.push('apple')
-// items.pop();
-
-// splice(idex, deleteCount, addItem(optional))
-items.splice(1, 2, 'apple', 'coffee')
-
-
-// console.log(items)
-
-
-// console.log(typeof isActive);
+// semicolan is js in optional
+// console.log(email)
 
 
 
-// objects
+// data types => string, numbers(float, negative), boolean, arrays and objects
+let userName = 'yash';
+//string=>  anything inside '' or "" 
+let age = 26.5;
+let userIsOnline = "false";
+// boolean => when we store just true/false that is a boolean value
+
+// arrays and objects
+let items = ['milk', 'bread', 'butter',]
+// index value always starts from zero
+// index values  => read, edit, delete
+items[1] = 'brown bread';
+// push => adds a value at the end of the array
+// items.push('coffee')
+
+
+// pop to remove the value from the end
+
+// console.log(items);
+// items.pop()
+// splice => remove values where we want
+// array.splice(index, deleteCount, addNewItems)
+// items.splice(0, 2, 'milk powder')
+// console.log(typeof items)
+
+
+
+
+
+
+// let users = ['yash', 'yash@gmail.com', 26, 211003, 45000]
 // let user = {
-//     name: 'ashish',
-//     email: 'ashish@gmail.com',
-//     age: 25
+//     name: 'yash',
+//     email: 'yash@gmail.com',
+//     age: 26,
+//     zip: 211003,
+//     salary: 45000
 // }
-// user.name = 'ashish shukla'
-// user.address = 'Pune'
-// delete user.age
+// user.name = 'yash goel';
+// user.address = 'allahabad'
+// delete user.zip;
 // console.log(typeof user)
 
 
-// why arrays are objects
-// primitive and reference 
 
-
-
-// let arr = [1,2,3,4, 'test', true] 
-
-
-// index always starts fro  0
-// index number is always a number 
-// arr['magic'] = 'test'
+// let arr = [1,2,3,4]
+// // index number is always number
+// // index always starts from 0
+// arr[4] = 5;
+// arr['test'] = 'i am an object'
 // console.log(arr)
 
 
 
-// primitive and reference
 
-// primitive : 
-// reference: [],{}
+// winning app
 
-let a = [1,2,3]
-let b = a;
+// array of objects
+let users = [
+    {name: 'yash', email:'yash@gmail.com'},
+    {name: 'asish', email:'ashish@gmail.com'},
+    {name: 'neha', email:'neha@gmail.com'},
+    {name: 'kunal', email:'kunal@gmail.com'},
+    {name: 'bhavna', email:'bhavna@gmail.com'},
+    {name: 'raj', email:'raj@gmail.com'},
+    {name: 'mayank', email:'mayank@gmail.com'},
+    {name: 'vipul', email:'vipul@gmail.com'},
+    {name: 'rajat', email:'rajat@gmail.com'},
+    {name: 'saurabh', email:'saurabh@gmail.com'},
+    {name: 'anand', email:'anand@gmail.com'},
+]
+let randomUser = Math.floor(Math.random()*10)
 
-b.pop()
-console.log(a)
-
-
-
-// primitive
-// let a = 5;
-// let b = a;
-// b = 10;
-// console.log(a, b)
+console.log(users[randomUser].name)
