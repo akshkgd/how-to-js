@@ -1,112 +1,101 @@
 // conditionals
+// loops 
 // functions
-// loops
 
-// age > 18 
-// let age = 2;
 
-// if(age> 18){
-//     console.log('eligible to vote')
+let name = 'yash';
+let age = 54;
+// console.log(name, age)
+
+
+// conditionals => decision??
+// if and else
+// either wrote true/false or something that gets convert to true or false
+
+
+
+// if(" "){
+//     console.log('i will go to the party!!!')
 // }
 // else{
-//     console.log('not eligible to vote!')
+//     console.log('lets sleep!!')
 // }
-
-
-// we can write true or false inside if or something that converts to true or false
-
 
 // truthy and falsy
-
-// if(10){
-//     console.log('i am god!!')
-// }
-
 // truthy => true
-// falsy => false => "" '' 0 -0 undefined and null
+// falsy => false => 0, -0, "", '', null, undefined, NaN
 
 
-// let day = 'rainy';
-
-// if(day == 'sunny'){
-//     console.log('wear t shirt')
-// }
-// else if(day == 'cold'){
-//     console.log('wear jacket')
+// if(age> 18){
+//     console.log(name, " is eligible to vote!")
 // }
 // else{
-//     console.log('wear raincoat')
+//     console.log(name, "is not eligible to vote!")
 // }
 
 
 
-// functions
+
+// function => block of code use to perform the same task multiple times when we want....
 
 // function grinder(items){
 //     console.log('grinding...', items)
 // }
 
 // grinder('tomatoes');
-// grinder('onions')
+// grinder('garlic')
 
-
-// function add(a,b){
+// function add(a, b){
 //     console.log(a+b)
 // }
 
-
 // add(2,3)
-// add(12,13)
-
-// return
-
-// function sqr(n){
-//     return n*n;
-// }
+// add(45,60)
 
 
-// let result = sqr(3);
-// console.log(sqr(2))
-
-// arrow functions
-
-// functionName=()=>{
-//      logic
-// }
-
-
-cube=(n)=>n*n*n
-
-let result = cube(4);
-// console.log(result)
-
-
-// use of fin in js
-// input from user in js
-// interactive designs js
-
-
-
-// for loop, for each=> on day 5
 // loop => repeat
 
+// console.log('1');
+// console.log('2')
+// console.log('3')
+// console.log('4')
+// console.log('5')
 
-// for loop
-// for(init; condition; increment)
+// for and foraeach
 
-let items = ['milk', 'bread', 'butter', 'icecream']
-for(let i=0; i<4; i++){
-    console.log(items[i])
+
+
+// for(initial point, condition, counter)
+
+
+
+
+
+// for(let i=1; i<=5; i++ ){
+//     console.log(i)
+// }
+
+let users = [
+    {name: 'yash', age: 24, gender: 'male'},
+    {name: 'mayank', age: 14, gender: 'male'},
+    {name: 'neha', age: 32, gender: 'female'},
+    {name: 'arpit', age: 21, gender: 'male'},
+    {name: 'pranjali', age: 29, gender: 'female'},
+    {name: 'bhavna', age: 22, gender: 'female'},
+    {name: 'kunal', age: 20, gender: 'male'},
+    {name: 'navneet', age: 18, gender: 'male'},
+    {name: 'debashish', age:46, gender: 'male'},
+ ]
+
+for(let i=0; i<users.length; i++){
+    if(users[i].age <28 && users[i].gender == 'male'){
+        console.log(users[i].name, users[i].age)
+    }
+    
 }
 
 
-// how to take input from user
-// bill split app
-// bmi app
-// DOM
+// ternary
+// condition ? if : else \
 
-// 3000
-
-
-// movie app api
-// 
+100>20? console.log('i am running') : console.log('i am not running');
